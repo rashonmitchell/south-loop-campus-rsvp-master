@@ -1,1 +1,66 @@
-      %b JULY 7TH @ 11:00AM
+%header.l-header
+  %a.link-to-main-website{href: 'http://citychurchchicago.com/', target: '_blank'}
+
+  .social
+    %a{href: "https://www.facebook.com/pages/City-Church-Chicago/294807432384"}= image_tag('social_fb.png')
+    %a{href: "mailto:info@citychurchchicago.com"}= image_tag('social_mail.png')
+    %a{href: "https://twitter.com/CityChurchChi"}= image_tag('social_tw.png')
+%hr.blue-hr
+
+.l-main
+  %center
+    %p.justify
+      %b THIS SUMMER
+      CITY CHURCH CHICAGO IS EXPANDING AND LAUNCHING A
+      %b 2ND CAMPUS
+      IN THE
+      %b.font-blue SOUTH LOOP
+      THIS SUMMER,
+      %b AUGUST 12TH @ 11:00AM
+      W/ PASTORS KENT AND ALLI MUNSEY!
+
+    %p.justify
+      WHETHER YOU LIVE IN THE
+      %b SOUTH LOOP,
+      HAVE FRIENDS IN THE AREA, OR FEEL LIKE SPENDING THE AFTERNOON ON MICHIGAN AVE OR MILENNIUM PARK AFTER SERVICE - DON’T MISS THIS EXCITING FIRST   SERVICE EXPERIENCE
+      %b JULY 7TH @ 11AM.
+
+    = image_tag('icon_location.png')
+    %p
+      THE FINE ARTS BUILDING
+      %br
+      410 S. MICHIGAN AVE.
+      %br
+      FLOOR #10
+    = image_tag('icon_car.png')
+    %p
+      PARKING AVAILABLE
+      %br
+      IN THE MILLENIUM PARK GARAGE
+    = image_tag('icon_family.png')
+    %p FAMILY STYLE SERVICE
+    = image_tag('icon_cta.png')
+    %p
+      BROWN LINE = VAN BUREN
+      %br
+      PURPLE LINE = VAN BUREN
+      %br
+      RED LINE = JACKSON STOP
+
+  %form.b-rsvp-form
+    = image_tag('ill_be_there.png', class: 'ill-be-there')
+    .b-inputs.hide
+      .b-form-inputs
+        %input{placeholder: "First", name: 'name_one'}
+        %input{placeholder: "Last", name: 'name_two'}
+        %input{placeholder: "Email", type: "email", name: 'name_three'}
+        %b I'M
+        %b.font-blue BRINGING
+        = select_tag "bringing", options_for_select([*1..15]), include_blank: true
+        %b PEOPLE
+        = image_tag('done_done.png', class: 'done-done')
+      .spinner.hide
+      .thank-you.hide
+        Thank you for RSVP'ing for
+        %b.font-blue Sunday August 12, 2013 11am.
+        See you there!
