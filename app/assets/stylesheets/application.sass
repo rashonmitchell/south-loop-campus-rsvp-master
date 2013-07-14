@@ -1,0 +1,140 @@
+@import normalize
+@import compass/utilities
+@import compass/css3
+
+@font-face
+  font-family: 'BebasNeueRegular'
+  src: url('/BebasNeue-webfont.eot')
+  src: url('/BebasNeue-webfont.eot?#iefix') format("embedded-opentype"), url('/BebasNeue-webfont.woff') format("woff"), url('/BebasNeue-webfont.ttf') format("truetype"), url('/BebasNeue-webfont.svg#BebasNeueRegular') format("svg")
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'BrandonReg'
+  src: url('/Brandon_reg.eot')
+  src: url('/Brandon_reg.eot?#iefix') format("embedded-opentype"), url('/Brandon_reg.woff') format("woff"), url('/Brandon_reg.ttf') format("truetype"), url('/Brandon_reg.svg#BrandonReg') format("svg")
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'BrandonBlk'
+  src: url('/Brandon_blk.eot')
+  src: url('/Brandon_blk.eot?#iefix') format("embedded-opentype"), url('/Brandon_blk.woff') format("woff"), url('/Brandon_blk.ttf') format("truetype"), url('/Brandon_blk.svg#BrandonBlk') format("svg")
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'BrandonLight'
+  src: url('/Brandon_light.eot')
+  src: url('/Brandon_light.eot?#iefix') format("embedded-opentype"), url('/Brandon_light.woff') format("woff"), url('/Brandon_light.ttf') format("truetype"), url('/Brandon_light.svg#BrandonLight') format("svg")
+  font-weight: normal
+  font-style: normal
+
+
+
+.justify
+  text-align: justify
+
+.hide
+  display: none
+
+$font-blue: #32a1d6
+$font-gray: #636363
+$form-background: #f1f1f1
+
+body
+  font-family: BrandonLight, 'Helvetica Neue', Arial, Helvetica, FreeSans, 'sans-serif'
+  margin: 0
+  padding: 0
+  background:
+    color: black
+    image: image_url('asfalt_m.png')
+    position: center
+b
+  font-family: BrandonBlk, 'Helvetica Neue', Arial, Helvetica, FreeSans, 'sans-serif'
+
+.font-blue
+  color: $font-blue
+
+
+.l-header
+  background-color: black
+  background-image: image_url('header_bg.jpg')
+  background-position: center
+  background-repeat: no-repeat
+  width: 100%
+  height: 656px
+
+  .link-to-main-website
+    width: 270px
+    height: 36px
+    position: absolute
+    left: 50%
+    top: 0
+    margin-left: -136px
+
+  .social
+    position: absolute
+    top: 528px
+    // left: 502px
+    margin: 0 auto
+    width: 287px
+    left: 50%
+    margin-left: -144px
+    a
+      margin-right: 10px
+      &:last-child
+        margin-right: 0
+
+.blue-hr
+  padding: 0
+  margin: 0
+  border: 0
+  background-image: image_url('blue_hr.png')
+  background-repeat: repeat-x
+  height: 9px
+  width: 100%
+
+.l-main
+  color: white
+  font-size: 20px
+
+  p
+    letter-spacing: 1.5px
+    font-size: 22px
+    width: 480px
+
+  .b-rsvp-form
+    position: relative
+    width: 460px
+    margin: 0 auto
+    min-height: 200px
+    .ill-be-there
+      cursor: pointer
+      position: absolute
+      top: 22px
+      left: -31px
+    input
+      width: 85%
+      margin: 10px
+      padding: 10px
+      +border-radius(5px)
+      border: 1px solid #c6c7c8
+      height: 20px
+    .spinner
+      height: 100px
+    .b-inputs
+      color: $font-gray
+      min-height: 150px
+      font-size: 30px
+      margin-bottom: 50px
+      text-align: center
+      padding-top: 110px
+      background: $form-background
+      .done-done
+        margin-top: 15px
+        cursor: pointer
+
+    .thank-you
+      padding: 15px
+

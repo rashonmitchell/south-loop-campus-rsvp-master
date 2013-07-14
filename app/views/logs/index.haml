@@ -1,0 +1,16 @@
+= stylesheet_link_tag "//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css"
+
+.container{style: "background: #eee"}
+  %table.table.table-striped.table-bordered
+    %tr
+      %th Line
+      %th URL
+      %th Message
+      %th Created
+    - @logs.each do |log|
+      %tr
+        %td= log.line
+        %td= log.url
+        %td= log.message
+        %td= l log.created_at, format: "%b %d %I.%M%p'"
+
